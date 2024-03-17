@@ -1,0 +1,5 @@
+Genel olarak kendi kendime yazdığım C++ kodlarının olduğu klasör diyebiliriz.
+
+Okulda ve stajda belli bir miktarda C++ kullanmıştım ancak iş hayatına başladıktan sonra uzak kaldım. Yeni bir bilgisayar aldıktan sonra C özelinde oluşturduğum klasörün bir benzerini de C++ üzerinde oluşturmak istedim. Bu klasörü oluşturmadan önce ilk olarak learncpp.com üzerinden bir tekrara başladım. Şimdi de bu site üzerinden aldığım notlardan yola çıkarak kendi yazdığım kodları kayıt altına almak istiyorum. Zamanla nereden nereye geldiğimi de bu şekilde takip edeceğim.
+
+Bu klasör ileride farklı şekillerde düzenlenebilir ancak şu anki planda ilk olarak basit komutların olduğu ve VS Code üzerinden yazdığım kodlar, daha sonrasında ise OOP kısmına geçince yavaştan Xcode üzerinde proje oluşturarak yazdığım kodları bu repository'e ekleyeceğim. 

@@ -11,8 +11,8 @@ int main() {
     std::cout << sizeof(x) << std::endl;
 
     // float ve double precision deneme
-    float y{123133.232421};
-    double z{2323.232421323234};
+    float y{1231335.232421};
+    double z{23235.232421323234};
     std::cout << y << std::endl;
     std::cout << z << std::endl;
     // std::cout için daha fazla ondalık basamak görüntülemek için setprecision kullanımı

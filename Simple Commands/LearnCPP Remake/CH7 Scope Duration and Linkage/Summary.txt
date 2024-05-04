@@ -1,0 +1,8 @@
+* Global variables are variables defined outside of a function. Global variables have file scope, which means they are visible from the point of declaration 
+until the end of the file in which they are declared. Global variables have static duration, which means they are created when the program starts, and 
+destroyed when it ends. Avoid dynamic initialization of static variables whenever possible.
+
+* static kelimesinin anlamı kullanım yerine göre değişebilir
+
+* global değişkenlerde const kullanmaya çalışılmalı, yapabiliyorsa bir de inline yap.Bu özellik, küresel değişkenlerin sadece tanımlandıkları kaynak 
+dosyasında erişilebilir ve kullanılabilir olmalarını sağlar. 

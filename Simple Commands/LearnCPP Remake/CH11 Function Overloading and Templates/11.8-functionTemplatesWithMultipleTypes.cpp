@@ -1,9 +1,10 @@
 /* Bazi durumlarda, (max(2, 3.5) cagrimi gibi) iki farkli turde degisken gonderildiginden hata alinabilir. Bunu engellemek icin 
 3 farkli yola basvurabiliriz. 
 1- static cast kullanarak tur donusumu
-2- sablona explicit olarak tur gecirilmesi (onceki bolumde gosterdigim gibi)
+2- sablona explicit olarak tur gecirilmesi (onceki bolumde gosterdigim gibi) Derleyici kendiliginden yeni bir fonksiyon yaratir ve gereken durumda tur donusumu yapar
 3- sablonda birden fazla sablon elemani kullanilmasi
-fonksiyon geridonuslerinde de C++20'den itibaren auto kullanabildigimizden orada donuse gore return tipini kendisi ayarlar
+fonksiyon geridonuslerinde de C++20'den itibaren auto kullanabildigimizden orada donuse gore return tipini kendisi ayarlar. Buna abbreviated function templates denir
+Her parametrenin bagimsiz bir sablon olmasini istedigimiz durumda kullanilabilir.
 */
 #include <iostream>
 

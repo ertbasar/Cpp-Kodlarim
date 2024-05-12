@@ -1,0 +1,6 @@
+Cpp içerisinde bazen temel veri tipleri bize yeterli gelmez ve biz bu temel veri tiplerini kullanarak kendi veri tipimizi yaratırız. Bu tiplere de
+program-defined tür denir. Bu türler genel olarak struct, class ve uniondur. 
+Burada bu türü kullanan her dosyada tanımlarının olması gerekir, forward declaration gibi bir kullanımı yoktur. Bunun nedeni derleyicinin ne kadar bellek
+kullanılacağını bilmesinin gerekliliğidir. 
+Bu yüzden program-defined türler tipik olarak header dosyalarında tanımlanırlar ve de #include edilirler. Bu header dosyası da eğer çoklu türlerin olduğu
+header dosyası değilse adı türün adı olur. 

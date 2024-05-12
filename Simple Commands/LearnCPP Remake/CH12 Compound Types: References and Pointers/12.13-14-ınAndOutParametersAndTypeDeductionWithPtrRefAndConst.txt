@@ -1,0 +1,9 @@
+In and out parameters
+Cpp'de fonksiyon ve çağrısı birbirleriyle iki mekanizma yardımıyla haberleşirler. Bunlar parametreler ve geri dönüş değerleri.
+Bu parametrelerden sadece input olarak verilen, içeride işlem yapılmayan ve genelde yine passed by value veya const referans ile gönderilenlerine in parameter,
+fonksiyon içinde sadece return için kullanılacak parametreye de out parameter denir. 
+Type deduction with pointers, references and const
+Type deduction yapılınca const ve constexpr düşer bu yüzden onları autonun önüne yeniden yazmak gerekli
+Type deduction yapınca referansları da yeniden yazmak gerekli olur
+Referansların aksine type deduction pointerları düşürmez
+Biraz karışık anlatmış olabilirim ancak gerekirse yeniden bakabilirsin.

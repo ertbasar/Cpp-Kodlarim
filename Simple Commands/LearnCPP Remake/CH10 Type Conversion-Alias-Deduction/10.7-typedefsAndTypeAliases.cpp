@@ -15,11 +15,10 @@ struct _Deneme2{
 using Deneme2 = struct _Deneme2;
 int main(){
     using Foo = long;
-    
     Deneme a;
     Deneme2 b;
-    // İstenmesi halinde yine aşağıdaki gibi de struct değişkeni tanımlanabilir
-    struct _Deneme c;
+    // Aslında az önceki kısmı C ile karıştırdım sanırım. struct _Deneme yerine sadece _Deneme yazarak da struct oluşturabıliriz
+    _Deneme asd;
 
     return 0;
 }

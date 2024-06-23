@@ -1,7 +1,7 @@
 /* Aslına bakarsak scoped ve unscoped enums arasında çok da bir fark yok. Çalışma şekilleri de benzer ancak aralarında iki temel fark bulunmakta. 
 1. Implicit olarak integer'a dönüştürülmezler. Bu yüzden explicit cast yapmak gerekebilir.
 2. Sadece o enum'un scope'unda erişilebilirler. 
-Unscope enum oluşturmak için enuö class kullanırız onun dışındaki her şey aynıdır. Bu kullanım namespacelere benzerdir.
+Unscope enum oluşturmak için enum class kullanırız onun dışındaki her şey aynıdır. Bu kullanım namespacelere benzerdir.
 Kullanımı unscoped olanlara göre biraz daha çetrefillidir denebilir.
 */
 

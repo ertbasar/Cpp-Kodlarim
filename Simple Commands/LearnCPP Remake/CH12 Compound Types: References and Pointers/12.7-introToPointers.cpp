@@ -21,7 +21,7 @@ int main(){
     int x{4};
     int* ptr; // init ama çöp adres tutuyor olabilir
     int* ptr2{}; // boş pointer initi
-    int* ptr3{&x}; // x'in adresini tutan prt initi
+    int* ptr3{&x}; // x'in adresini tutan ptr initi
 
     // x'in değeri ve adresi yazıldı
     std::cout << x << std::endl;

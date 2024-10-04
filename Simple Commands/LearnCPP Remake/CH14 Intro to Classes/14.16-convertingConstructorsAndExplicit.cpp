@@ -29,7 +29,8 @@ class Foo{
 
 int main(){
     Foo doo{23};
-    // Foo goo{'s'};
+    // Foo goo{'string'}; //
     doo.print();
+    // goo.print();
     return 0;
 }

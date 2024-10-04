@@ -39,18 +39,15 @@ public:
 int main()
 {
     constexpr Pair p { 5, 6 };       // now constexpr
-    std::cout << p.greater();        // p.greater() evaluates at runtime or compile-time
+    std::cout << p.greater() << std::endl;        // p.greater() evaluates at runtime or compile-time
 
     constexpr int g { p.greater() }; // p.greater() must evaluate at compile-time
-    std::cout << g;
+    std::cout << g << std::endl;
 
     constexpr Pair2 p1 { 5, 6 };
-    std::cout << p1.greater();
+    std::cout << p1.greater() << std::endl;
 
     constexpr int g1 { p1.greater() };
     std::cout << g1;
-
-    return 0;
-
     return 0;
 }

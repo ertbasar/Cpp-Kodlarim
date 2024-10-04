@@ -2,7 +2,7 @@
 bu üyelere erişim kısmında sıkıntı yaşarız. Burada devreye constructor girer. Constructorlar obje tanımlanırken çağrılan özel üye fonksiyonlardır. 
 İsimleri sınıfın adı ile aynıdır ve return türleri yoktur. Eğer gerekirse conversion yapma yetileri vardır. 
 Objeyi init etmesi gerektiğinden const olamaz, ancak const objelerle kullanılabilir. (İlk olarak init edilip sonradan const olacağından sorun oluşturmaz)
-Constructorlar tanımlama işleminde kullanılma amacıyla oluşturulmuşlardır. Setterlar ile bir objenin bir elemmanını değiştirme amaçlı
+Constructorlar tanımlama işleminde kullanılma amacıyla oluşturulmuşlardır. Setterlar ise bir objenin bir elemmanını değiştirme amaçlı
 */
 
 #include <iostream>

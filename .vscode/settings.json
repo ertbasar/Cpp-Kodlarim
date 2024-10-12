@@ -42,6 +42,7 @@
         "complex": "cpp",
         "iomanip": "cpp",
         "print": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "vector": "cpp"
     }
 }

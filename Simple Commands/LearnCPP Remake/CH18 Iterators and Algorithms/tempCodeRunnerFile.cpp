@@ -1,0 +1,2 @@
+
+    // Bir vektör tanımlayalım ve

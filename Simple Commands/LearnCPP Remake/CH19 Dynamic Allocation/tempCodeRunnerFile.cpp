@@ -1,0 +1,1 @@
+0x0 beklendiği üzere

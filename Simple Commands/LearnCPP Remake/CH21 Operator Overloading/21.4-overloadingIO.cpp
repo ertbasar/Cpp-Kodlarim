@@ -15,5 +15,32 @@ if(in) // eğer tüm input işlemleri başarılı şekilde gerçekleştiyse
 return in;
 }
 Burada yanlış girişlerden kaçınmak önemli, bu yüzden giriş alırken direkt eşitleme yapma, önce bir validasyon işlemi yapılsa iyi olur. Konsoldan giriş
-ve çıkışta bu overload işlemleri çok işe yarar.
+ve çıkışta bu overload işlemleri çok işe yarar. 
 */
+
+// Bu chapterda kullandığım koordinat sınıfına ek olarak elemanlarını yazdıran bir cout overload'u tanımlayacağım
+
+#include <iostream> 
+
+class Coordinates{
+private:
+    int m_x{};
+    int m_y{};
+public:
+    // Constructorlar
+    Coordinates() = default; 
+    Coordinates(int x, int y):m_x{x},m_y{y}{}
+    friend std::ostream& operator<<(std::ostream& out, const Coordinates& c){
+        out << "Coordinates \nx: " << c.m_x << "\n" << "y: " << c.m_y;
+        return out;
+    }
+};
+
+
+int main(){
+    Coordinates co1(3,9);
+    
+    // print işlemini gerçekleştireceğiz
+    std::cout << co1 << std::endl;
+    return 0;
+}

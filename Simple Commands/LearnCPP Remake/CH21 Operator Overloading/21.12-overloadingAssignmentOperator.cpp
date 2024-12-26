@@ -36,7 +36,7 @@ public:
 
     // operator= overload işlemi
     Coordinates& operator=(const Coordinates& coord){
-        // ilk olarak seld-assignment olup olmadığı kontrol edilir.
+        // ilk olarak self-assignment olup olmadığı kontrol edilir.
         if(this == &coord)
             return *this;
 

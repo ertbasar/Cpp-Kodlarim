@@ -13,7 +13,7 @@ class Base{
 class Derived : public Base{
     public:
     Derived(int value): Base(value) {}
-    int getValue(){
+    int getValue(){ // Bu fonksiyon sayesinde ana sınıfı değiştirmeden bir erişim sağladık
         return m_value;
     }
 };

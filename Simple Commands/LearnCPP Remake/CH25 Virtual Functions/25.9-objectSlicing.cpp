@@ -1,4 +1,4 @@
-/* Şimdiye kadar türetilen objeyi baz objenin referansına atama yoluyla çalıştık. Peki direkt olarak tüertilen objeyi baz objeye assign edersek ne olur?
+/* Şimdiye kadar türetilen objeyi baz objenin referansına atama yoluyla çalıştık. Peki direkt olarak türetilen objeyi baz objeye assign edersek ne olur?
 Burada türetilmiş obje hem türetilmiş hem de baz kısımlara sahip olduğundan dolayı baz kısım assign edilirken türetilmiş kesim 'sliced' olur yani
 kırpılır. Yanlış kullanımda beklenmeyen sonuçlar olabilir dikkat edmek gerekli. Genel olarak özellikle fonksiyonlarda pass by ref yerine pass by value
 kullanıldığında yaşanmakta diyebiliriz bu sorun için. Vektörlerde de vektör elementleri assignable olması gerektiğinden ve de referanslar yeniden

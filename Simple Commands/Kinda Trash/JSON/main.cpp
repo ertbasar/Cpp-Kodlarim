@@ -16,13 +16,13 @@ void saveToJson(const std::vector<Note>& notes) {
     json j_list = json::array(); // JSON dizisi oluşturuyoruz
 
     for (const auto& note : notes) {
-        json j_note;
-        j_note["id"] = note.id;
-        j_note["content"] = note.content;
-        j_list.push_back(j_note);
+        json j_note; //JSON objesi oluşturduk
+        j_note["id"] = note.id; // elimizdeki note dosyasının id'sini JSON objesine ekledik
+        j_note["content"] = note.content; // elimizdeki note dosyasının content'ini JSON objesine ekledik
+        j_list.push_back(j_note); // JSON objesini JSON dizisine enjekte ettik
     }
 
-    std::ofstream file("notes.json");
+    std::ofstream file("notes.json"); //dosyayı açtık
     if (file.is_open()) {
         file << j_list.dump(4); // 4 boşluk bırakarak (indent) güzel formatta kaydeder
         file.close();
@@ -31,7 +31,7 @@ void saveToJson(const std::vector<Note>& notes) {
 }
 
 // JSON dosyasından verileri yükleme
-void loadFromJson(std::vector<Note>& notes) {
+void loadFromJson(std::vector<Note>& notes) { // Notların hepsinin tutulduğu obje getirildi
     std::ifstream file("notes.json");
     if (!file.is_open()) {
         std::cout << "Dosya bulunamadi, yeni liste olusturuluyor." << std::endl;
@@ -42,11 +42,11 @@ void loadFromJson(std::vector<Note>& notes) {
     file >> j_list; // Dosya içeriğini JSON nesnesine aktar
 
     notes.clear();
-    for (const auto& item : j_list) {
-        Note n;
+    for (const auto& item : j_list) { //JSON listesi içindeki her elemanı sırayla ana listeye ekleyeceğiz
+        Note n; // Not objesi oluşturuldu ve aşağıda değerleri verildi.
         n.id = item["id"];
         n.content = item["content"];
-        notes.push_back(n);
+        notes.push_back(n); // Not objesi ana listeye enjekte edildi
     }
     file.close();
     std::cout << "Veriler dosyadan yuklendi." << std::endl;
